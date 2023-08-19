@@ -1,0 +1,149 @@
+.checkbox-apple {
+  position: relative;
+  width: 190px;
+  height: 25px;
+  margin: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkbox-apple label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+  background: linear-gradient(to bottom, #b3b3b3, #e6e6e6);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.checkbox-apple label:after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.checkbox-apple input[type="checkbox"]:checked + label {
+  background: linear-gradient(to bottom, #0dcaf0, #0dcaf0);
+}
+
+.checkbox-apple input[type="checkbox"]:checked + label:after {
+  transform: translateX(25px);
+}
+
+.checkbox-apple label:hover {
+  background: linear-gradient(to bottom, #b3b3b3, #e6e6e6);
+}
+
+.checkbox-apple label:hover:after {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.yep {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 25px;
+}
+.pic1 {
+  background-image: url(../images/luxur/img9.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  height: 300px;
+  background-attachment: fixed;
+}
+.pic2 {
+  background-image: url(../images/aswan/img7.jpg);
+}
+.team-item {
+  position: relative;
+}
+.team-item:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: #0dcaf0;
+  opacity: 0;
+}
+.team-item:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  border-radius: 5px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 0.8s;
+}
+.team-item::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #0dcaf0;
+  opacity: 0;
+}
+.team-item:hover::before {
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  border-radius: 5px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 0.8s;
+}
+.pic3 {
+  height: 500px;
+  background: url(../images/Zewail.jpeg), #0dcaf0;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.pic4 {
+  background: url(../images/mohamed.jpg), #0dcaf0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.pic5 {
+  background: url(../images/salah1.jpg), #0dcaf0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.pic3:hover {
+  width: 340px;
+  height: 460px;
+  transition: 1s;
+  background-color: #525151;
+  margin-top: 20px;
+}
+.img4 {
+  background-image: url(../images/galalh/img7.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.img5 {
+  background-image: url(../images/Hurghada/img8.jpg);
+}
+.img6 {
+  background-image: url(../images/img2.jpg);
+}
+.img7 {
+  background-image: url(../images/siwa/img4.jpg);
+}
